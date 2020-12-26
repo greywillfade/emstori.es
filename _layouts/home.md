@@ -1,9 +1,13 @@
-<p>&lt;!doctype html&gt;</p>
+---
+title: Home
+---
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EM stories - home title</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     <header>
@@ -17,9 +21,8 @@
         </nav>
     </header>
     <main>
-        <p>Home intro content here</p>
-<pre><code>&lt;/main&gt;
-&lt;footer&gt;Stories by Sally&lt;/footer&gt;
-</code></pre>
+        {{ content }}
+    </main>
+    <footer>Stories by Sally</footer>
   </body>
 </html>
