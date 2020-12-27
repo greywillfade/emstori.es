@@ -1,14 +1,13 @@
 ---
-title: Test story
-date: '2020-12-26'
-url: test-story
-layout: story
+title: Second test
+date: '2020-12-27'
+url: test-story2
 tags:
   - authorname
   - story
 
 ---
-A test for a story
+Second test
 
 How about a `<blockquote>`?
 

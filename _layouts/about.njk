@@ -1,6 +1,6 @@
 
     {% include "partials/header.njk" %}
     <main style="background-color:turquoise;">
-        {{ content }}
+        {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}

@@ -1,6 +1,12 @@
 
     {% include "partials/header.njk" %}
     <main style="background-color:plum;">
-        {{ content }}
+        {{ content | safe }}
+
+        <ul>
+        {%- for story in collections.story -%}
+          <li>{{ story.data.date }} - <a href="stories/{{ story.data.url }}">{{ story.data.title }}</a></li>
+        {%- endfor -%}
+        </ul>
     </main>
     {% include "partials/footer.njk" %}
